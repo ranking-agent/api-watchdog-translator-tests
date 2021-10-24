@@ -1,0 +1,51 @@
+{
+	"name": "Diabetes Phenotype",
+	"target": "https://strider.renci.org/1.2/query",
+	"expectations": [
+		{
+			"selector": ".message.knowledge_graph.nodes[\"MONDO:0005148\"].name",
+			"value": "type 2 diabetes mellitus",
+			"validation_type": "string"
+		},
+		{
+			"selector": ".message.knowledge_graph.nodes[\"HP:0031819\"].name",
+			"value": "Increased waist to hip ratio",
+			"validation_type": "string"
+		},
+		{
+			"selector": ".message.results | map(select(.node_bindings.n1[0].id == \"HP:0004324\")) | .[0].node_bindings.n1[0].id",
+			"value": "HP:0004324",
+			"validation_type": "trapi.curie"
+		}
+	],
+	"payload": {
+		"message": {
+			"query_graph": {
+				"nodes": {
+					"n0": {
+						"ids": [
+							"MONDO:0005148"
+						],
+						"categories": [
+							"biolink:Disease"
+						]
+					},
+					"n1": {
+						"categories": [
+							"biolink:PhenotypicFeature"
+						]
+					}
+				},
+				"edges": {
+					"e01": {
+						"subject": "n0",
+						"object": "n1",
+						"predicates": [
+							"biolink:has_phenotype"
+						]
+					}
+				}
+			}
+		}
+	}
+}
