@@ -1,9 +1,9 @@
 {
   "name": "Node normalization checks",
-  "target": "https://nodenormalization-sri.renci.org/1.2/",
+  "target": "https://nodenormalization-sri.renci.org/1.2/get_normalized_nodes",
   "expectations": [
     {
-      "selector": ".\"MESH:D014867\".id.identifier  \"PUBCHEM.COMPOUND:962\"",
+      "selector": ".\"MESH:D014867\".id.identifier == \"PUBCHEM.COMPOUND:962\"",
       "value": true,
       "validation_type": "string"
     },
@@ -13,7 +13,7 @@
       "validation_type": "bool"
     },
     {
-      "selector": ".\"NCIT:C34373\".id.identifier  \"MONDO:0004976\"",
+      "selector": ".\"NCIT:C34373\".id.identifier == \"MONDO:0004976\"",
       "value": true,
       "validation_type": "string"
     },
@@ -34,11 +34,9 @@
     }
   ],
   "payload": {
-    {
-      "curies": [
-          "MESH:D014867",
-          "NCIT:C34373"
-      ]
-    }
+    "curies": [
+      "MESH:D014867",
+      "NCIT:C34373"
+    ]
   }
 }
