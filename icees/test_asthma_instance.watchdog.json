@@ -8,7 +8,7 @@
       "validation_type": "bool"
     }
   ],
-  "email_to": "dfolarin@covar.com",
+  "email_to": ["dfolarin@covar.com"],
   "payload": {
     "message": {
       "query_graph": {
