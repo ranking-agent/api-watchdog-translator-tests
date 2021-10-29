@@ -1,6 +1,7 @@
 {
 	"name": "Diabetes Phenotype",
 	"target": "https://strider.renci.org/1.2/query",
+	"email_to": "dfolarin@covar.com",
 	"expectations": [
 		{
 			"selector": ".message.knowledge_graph.nodes[\"MONDO:0005148\"].name",
