@@ -1,7 +1,7 @@
 {
   "name": "Node normalization checks",
   "target": "https://nodenormalization-sri.renci.org/1.2/get_normalized_nodes",
-  "email_to": ["powen@renci.org", "bizon@renci.org"],
+  "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
 
   "expectations": [
     {

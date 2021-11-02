@@ -1,7 +1,8 @@
 {
   "name": "Test DILI Instance",
   "target": "https://icees.renci.org:16341/query?reasoner=true&verbose=false",
-  "email_to": ["dfolarin@covar.com"],
+  "email_to": ["dfolarin@covar.com", "bizon@renci.org"],
+
   "expectations": [
     {
       "selector": "has(\"message\")",
