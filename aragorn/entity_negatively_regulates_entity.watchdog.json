@@ -1,6 +1,8 @@
 {
   "name": "Entity negatively regulates another entity",
   "target": "https://aragorn.renci.org/1.2/query",
+  "email_to": ["powen@renci.org", "bizon@renci.org"],
+
   "expectations": [
     {
       "selector": ".message.knowledge_graph.nodes[\"NCBIGene:23221\"].name",

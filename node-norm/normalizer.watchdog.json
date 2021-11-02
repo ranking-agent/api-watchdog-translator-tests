@@ -1,6 +1,8 @@
 {
   "name": "Node normalization checks",
   "target": "https://nodenormalization-sri.renci.org/1.2/get_normalized_nodes",
+  "email_to": ["powen@renci.org", "bizon@renci.org"],
+
   "expectations": [
     {
       "selector": ".\"MESH:D014867\".id.identifier == \"PUBCHEM.COMPOUND:962\"",

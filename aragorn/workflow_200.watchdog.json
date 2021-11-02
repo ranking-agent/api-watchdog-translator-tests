@@ -1,6 +1,8 @@
 {
   "name": "Workflow that succeeds",
   "target": "https://aragorn.renci.org/1.2/query",
+  "email_to": ["powen@renci.org", "bizon@renci.org"],
+
   "expectations": [
     {
       "selector": ".message.results | length > 1",
