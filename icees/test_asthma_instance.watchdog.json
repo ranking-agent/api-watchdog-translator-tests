@@ -1,6 +1,8 @@
 {
   "name": "Test Asthma instance",
   "target": "https://icees.renci.org:16339/query?reasoner=true&verbose=false",
+  "email_to": ["dfolarin@covar.com", "bizon@renci.org", "richak@renci.org"],
+
   "expectations": [
     {
       "selector": "has(\"message\")",
