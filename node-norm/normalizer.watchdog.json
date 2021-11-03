@@ -7,7 +7,7 @@
     {
       "selector": ".\"MESH:D014867\".id.identifier == \"PUBCHEM.COMPOUND:962\"",
       "value": true,
-      "validation_type": "string"
+      "validation_type": "bool"
     },
     {
       "selector": ".\"MESH:D014867\".id.label == \"Water\"",
@@ -17,7 +17,7 @@
     {
       "selector": ".\"NCIT:C34373\".id.identifier == \"MONDO:0004976\"",
       "value": true,
-      "validation_type": "string"
+      "validation_type": "bool"
     },
     {
       "selector": ".\"NCIT:C34373\".id.label == \"amyotrophic lateral sclerosis\"",
