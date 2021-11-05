@@ -6,8 +6,8 @@ RUN apt-get install -yq vim
 RUN pip install 'api-watchdog[TRAPI]'
 
 # For security reasons we do not run as root
-RUN groupadd -g 1002 watchdog
-RUN useradd --no-create-home watchdog -s /bin/false -u 1002 -g watchdog
+RUN groupadd -g 1001 watchdog
+RUN useradd --no-create-home watchdog -s /bin/false -u 1001 -g watchdog
 RUN mkdir /sandbox
 RUN chgrp watchdog /sandbox
 RUN chmod g+rwx /sandbox
