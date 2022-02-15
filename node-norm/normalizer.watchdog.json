@@ -1,13 +1,14 @@
 {
   "name": "Node normalization checks",
   "target": "https://nodenormalization-sri.renci.org/1.2/get_normalized_nodes",
+  "proxy": "proxy.renci.org:8080",
   "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
 
   "expectations": [
     {
       "selector": ".\"MESH:D014867\".id.identifier == \"PUBCHEM.COMPOUND:962\"",
       "value": true,
-      "validation_type": "string"
+      "validation_type": "bool"
     },
     {
       "selector": ".\"MESH:D014867\".id.label == \"Water\"",
@@ -17,7 +18,7 @@
     {
       "selector": ".\"NCIT:C34373\".id.identifier == \"MONDO:0004976\"",
       "value": true,
-      "validation_type": "string"
+      "validation_type": "bool"
     },
     {
       "selector": ".\"NCIT:C34373\".id.label == \"amyotrophic lateral sclerosis\"",

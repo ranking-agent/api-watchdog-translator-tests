@@ -1,0 +1,16 @@
+{
+  "name": "Name resolution checks",
+  "target": "https://name-resolution-sri.renci.org/lookup?string=diabetes&offset=0&limit=10",
+  "proxy": "proxy.renci.org:8080",
+  "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
+
+  "expectations": [
+    {
+      "selector": ".\"MONDO:0005148\"[0] == \"diabetes\"",
+      "value": true,
+      "validation_type": "bool"
+    }
+  ],
+  "payload": {
+  }
+}

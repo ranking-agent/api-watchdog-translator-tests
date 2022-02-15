@@ -1,33 +1,24 @@
 {
   "name": "Entity negatively regulates another entity",
   "target": "https://aragorn.renci.org/1.2/query",
+  "proxy": "http://proxy.renci.org:8080",
   "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
 
   "expectations": [
     {
-      "selector": ".message.knowledge_graph.nodes[\"NCBIGene:23221\"].name",
-      "value": "RHOBTB2",
-      "validation_type": "string"
+      "selector": ".message.knowledge_graph.nodes | length > 0",
+      "value": true,
+      "validation_type": "bool"
     },
     {
-      "selector": ".message.results | map(select(.node_bindings.n1[0].id == \"NCBIGene:1869\")) | .[0].node_bindings.n1[0].id",
-      "value": "NCBIGene:1869",
-      "validation_type": "trapi.curie"
+      "selector": ".message.results | length > 0",
+      "value": true,
+      "validation_type": "bool"
     },
     {
-      "selector": ".message.knowledge_graph.nodes[\"NCBIGene:595\"].name",
-      "value": "CCND1",
-      "validation_type": "string"
-    },
-    {
-      "selector": ".message.knowledge_graph.nodes[\"NCBIGene:595\"].attributes[] | select(.attribute_type_id == \"biolink:xref\") | .value | length",
-      "value": 11,
-      "validation_type": "int"
-    },
-    {
-      "selector": ".message.knowledge_graph.nodes[\"NCBIGene:595\"].attributes[] | select(.attribute_type_id == \"biolink:synonym\") | .value | length",
-      "value": 7,
-      "validation_type": "int"
+      "selector": "(.message.results | map(.score) | length) == (.message.results | length)",
+      "value": true,
+      "validation_type": "bool"
     }
   ],
   "payload": {
