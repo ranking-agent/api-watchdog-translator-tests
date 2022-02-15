@@ -13,8 +13,8 @@ A test is a JSON file containing an object with the keys
 
     name (str): The name of the test
     target (url): The endpoint that the test targets
-    [optional] method (string): The HTTP method (GET, POST, etc.) to use when sending the request. If none is specified, it will default to POST.
-    [optional] email_to (list): A list of emails to send results of the test to
+    [optional] method (str): The HTTP method (GET, POST, etc.) to use when sending the request. If none is specified, it will default to POST.
+    [optional] email_to (list[str]): A list of emails to send results of the test to
     expectation(Array[Expectation]): A list of requirements that the response must meet for the test to pass.
     payload (object): The json passed to the endpoint.
 
