@@ -24,5 +24,3 @@ Each expectation is an object with the keys
     value (Any): a value to test equality against
     validation_type (ValidationType): An API Watchdog validation type used to validate the value/response. The value/response will be implicitly converted to this type. For example, if you specify 'float' and the value is an integer it will be implicitly converted to a float.
 
-
-For an example of an API Watchdog test see [#1](https://github.com/ranking-agent/api-watchdog-translator-tests/pull/1).
