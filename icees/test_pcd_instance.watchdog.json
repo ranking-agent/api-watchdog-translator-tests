@@ -1,0 +1,44 @@
+{
+  "name": "Test PCD",
+  "target": "https://icees-pcd.renci.org/query?reasoner=true&verbose=false",
+  "proxy": "proxy.renci.org:8080",
+  "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "richak@renci.org"],
+
+  "expectations": [
+    {
+      "selector": "has(\"message\")",
+      "value": true,
+      "validation_type": "bool"
+    }
+  ],
+  "payload": {
+    "message": {
+      "query_graph": {
+        "nodes": {
+          "n0": {
+            "ids": [
+              "MONDO:0009061"
+            ],
+            "categories": [
+              "biolink:DiseaseOrPhenotypicFeature"
+            ]
+          },
+          "n1": {
+            "categories": [
+              "biolink:DiseaseOrPhenotypicFeature"
+            ]
+          }
+        },
+        "edges": {
+          "e01": {
+            "subject": "n0",
+            "object": "n1",
+            "predicates": [
+              "biolink:has_real_world_evidence_of_association_with"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
