@@ -1,6 +1,6 @@
 {
   "name": "Test asthma",
-  "target": "https://icees.renci.org:16342/query?reasoner=true&verbose=false",
+  "target": "https://icees-asthma.renci.org/query?reasoner=true&verbose=false",
   "proxy": "proxy.renci.org:8080",
   "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "richak@renci.org"],
 

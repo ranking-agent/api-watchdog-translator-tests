@@ -1,6 +1,6 @@
 {
-  "name": "Test DILI",
-  "target": "https://icees-dili.renci.org/query?reasoner=true&verbose=false",
+  "name": "Test PCD",
+  "target": "https://icees-pcd.renci.org/query?reasoner=true&verbose=false",
   "proxy": "proxy.renci.org:8080",
   "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "richak@renci.org"],
 
@@ -17,7 +17,7 @@
         "nodes": {
           "n0": {
             "ids": [
-              "MONDO:0005359"
+              "MONDO:0009061"
             ],
             "categories": [
               "biolink:DiseaseOrPhenotypicFeature"
