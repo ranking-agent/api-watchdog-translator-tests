@@ -18,7 +18,7 @@ WORKDIR /api-watchdog/api-watchdog-0.3.0
 RUN chmod -R 777 .
 
 # install requirements
-RUN pip install .
+RUN pip install .[TRAPI]
 
 # Make a folder to put the fetch and exec script
 RUN mkdir /sandbox
