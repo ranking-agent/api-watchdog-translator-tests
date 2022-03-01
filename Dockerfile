@@ -1,18 +1,34 @@
-FROM python:3.9.7
+# leverage the renci python base image
+FROM renciorg/renci-python-image:v0.0.1
 
-# We need permisions to apt-get and access directories
-RUN apt-get update
-RUN apt-get install -yq vim
-RUN pip install 'api-watchdog[TRAPI]'
+# make a directory for the repo
+RUN mkdir /api-watchdog
 
-# For security reasons we do not run as root
-RUN groupadd -g 1001 watchdog
-RUN useradd --no-create-home watchdog -s /bin/false -u 1001 -g watchdog
+# go to the directory where we are going to download the repo
+WORKDIR /download
+
+# get the "latest" code, this must update to the latest the api-watchdog release
+RUN wget https://github.com/ranking-agent/api-watchdog/archive/refs/tags/v0.3.0.zip -O api-watchdog.zip
+RUN unzip -o api-watchdog.zip -d /api-watchdog
+
+# this must also update to the latest the api-watchdog release tag
+WORKDIR /api-watchdog/api-watchdog-0.3.0
+
+# make sure all is writeable for the nru USER later on
+RUN chmod -R 777 .
+
+# install requirements
+RUN pip install .
+
+# Make a folder to put the fetch and exec script
 RUN mkdir /sandbox
-RUN chgrp watchdog /sandbox
-RUN chmod g+rwx /sandbox
+WORKDIR /sandbox
 COPY ./fetch-and-exec.sh /sandbox/fetch-and-exec.sh
-USER watchdog
+
+# make sure all is writeable for the nru USER later on
+RUN chmod -R 777 .
+
+# switch to the non-root user (nru). defined in the base image
+USER nru
 
 WORKDIR /sandbox
-
