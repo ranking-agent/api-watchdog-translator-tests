@@ -2,7 +2,7 @@
 	"name": "Diabetes Phenotype",
 	"target": "https://strider.renci.org/1.2/query",
     "proxy": "proxy.renci.org:8080",
-	"email_to": ["dfolarin@covar.com", "bizon@renci.org", "richak@renci.org"],
+	"email_to": ["max@covar.com", "amesbah@covar.com", "bizon@renci.org", "richak@renci.org"],
 	"expectations": [
 		{
 			"selector": ".message.knowledge_graph.nodes[\"MONDO:0005148\"].name",
@@ -17,7 +17,7 @@
 		{
 			"selector": ".message.results | map(select(.node_bindings.n1[0].id == \"HP:0004324\")) | .[0].node_bindings.n1[0].id",
 			"value": "HP:0004324",
-			"validation_type": "trapi.curie"
+			"validation_type": "string"
 		}
 	],
 	"payload": {
