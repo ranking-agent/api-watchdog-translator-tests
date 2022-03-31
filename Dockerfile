@@ -8,11 +8,11 @@ RUN mkdir /api-watchdog
 WORKDIR /download
 
 # get the "latest" code, this must update to the latest the api-watchdog release
-RUN wget https://github.com/ranking-agent/api-watchdog/archive/refs/tags/v0.3.2.zip -O api-watchdog.zip
+RUN wget https://github.com/ranking-agent/api-watchdog/archive/refs/tags/v0.4.0.zip -O api-watchdog.zip
 RUN unzip -o api-watchdog.zip -d /api-watchdog
 
 # this must also update to the latest the api-watchdog release tag
-WORKDIR /api-watchdog/api-watchdog-0.3.2
+WORKDIR /api-watchdog/api-watchdog-0.4.0
 
 # make sure all is writeable for the nru USER later on
 RUN chmod -R 777 .
