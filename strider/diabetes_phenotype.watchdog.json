@@ -1,7 +1,6 @@
 {
 	"name": "Diabetes Phenotype",
 	"target": "https://strider.renci.org/1.2/query",
-    "proxy": "proxy.renci.org:8080",
 	"email_to": ["max@covar.com", "amesbah@covar.com", "bizon@renci.org", "richak@renci.org"],
 	"expectations": [
 		{

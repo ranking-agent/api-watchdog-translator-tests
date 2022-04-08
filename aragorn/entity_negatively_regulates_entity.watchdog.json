@@ -1,7 +1,6 @@
 {
   "name": "Entity negatively regulates another entity",
   "target": "https://aragorn.renci.org/1.2/query",
-  "proxy": "http://proxy.renci.org:8080",
   "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
 
   "expectations": [
