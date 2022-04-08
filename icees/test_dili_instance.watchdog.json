@@ -1,7 +1,6 @@
 {
   "name": "Test DILI",
   "target": "https://icees-dili.renci.org/query?reasoner=true&verbose=false",
-  "proxy": "proxy.renci.org:8080",
   "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "richak@renci.org"],
 
   "expectations": [
