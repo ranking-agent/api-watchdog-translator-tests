@@ -1,7 +1,7 @@
 {
   "name": "Test asthma",
   "target": "https://icees-asthma.renci.org/query?reasoner=true&verbose=false",
-  "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "richak@renci.org"],
+  "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "morrised@unc.edu", "pasfield@renci.org"],
 
   "expectations": [
     {

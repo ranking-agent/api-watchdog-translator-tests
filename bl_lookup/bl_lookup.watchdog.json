@@ -1,7 +1,7 @@
 {
   "name": "Biolink lookup checks",
   "target": "https://bl-lookup-sri.renci.org/uri_lookup/RO:0002606?version=2.2.5",
-  "email_to": ["powen@renci.org", "bizon@renci.org", "richak@renci.org"],
+  "email_to": ["bizon@renci.org", "morrised@unc.edu", "pasfield@renci.org"],
   "method": "GET",
   
   "expectations": [
