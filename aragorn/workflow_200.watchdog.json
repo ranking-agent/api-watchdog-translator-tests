@@ -1,6 +1,6 @@
 {
   "name": "Workflow that succeeds",
-  "target": "https://aragorn.renci.org/1.2/query",
+  "target": "https://aragorn.renci.org/aragorn/query",
   "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org"],
 
   "expectations": [
