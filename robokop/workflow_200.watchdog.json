@@ -1,0 +1,48 @@
+{
+  "name": "Workflow that succeeds",
+  "target": "https://aragorn.renci.org/robokop/query",
+  "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org"],
+
+  "expectations": [
+    {
+      "selector": ".message.results | length > 1",
+      "value": true,
+      "validation_type": "bool"
+    }
+  ],
+  "payload": {
+    "workflow": [
+      {
+        "id": "lookup"
+      }
+    ],
+    "message": {
+      "query_graph": {
+        "edges": {
+          "e01": {
+            "object": "n0",
+            "subject": "n1",
+            "predicates": [
+              "biolink:entity_negatively_regulates_entity"
+            ]
+          }
+        },
+        "nodes": {
+          "n0": {
+            "ids": [
+              "NCBIGene:23221"
+            ],
+            "categories": [
+              "biolink:Gene"
+            ]
+          },
+          "n1": {
+            "categories": [
+              "biolink:Gene"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
