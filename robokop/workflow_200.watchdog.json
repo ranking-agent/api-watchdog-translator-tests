@@ -23,22 +23,19 @@
             "object": "n0",
             "subject": "n1",
             "predicates": [
-              "biolink:entity_negatively_regulates_entity"
+              "biolink:related_to"
             ]
           }
         },
         "nodes": {
           "n0": {
             "ids": [
-              "NCBIGene:23221"
-            ],
-            "categories": [
-              "biolink:Gene"
+              "MONDO:0005737"
             ]
           },
           "n1": {
             "categories": [
-              "biolink:Gene"
+              "biolink:NamedThing"
             ]
           }
         }
