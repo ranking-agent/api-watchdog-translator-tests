@@ -1,6 +1,6 @@
 {
 	"name": "Diabetes Phenotype",
-	"target": "https://strider.renci.org/1.2/query",
+	"target": "https://strider.transltr.io/1.2/query",
 	"email_to": ["max@covar.com", "kenny@covar.com", "amesbah@covar.com", "bizon@renci.org", "morrised@unc.edu", "pasfield@renci.org"],
 	"expectations": [
 		{
