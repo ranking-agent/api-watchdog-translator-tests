@@ -1,6 +1,6 @@
 {
   "name": "Entity negatively regulates another entity",
-  "target": "https://aragorn.renci.org/aragorn/query",
+  "target": "https://aragorn.transltr.io/aragorn/query",
   "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org"],
 
   "expectations": [
