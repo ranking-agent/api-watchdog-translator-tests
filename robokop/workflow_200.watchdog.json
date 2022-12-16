@@ -1,7 +1,7 @@
 {
   "name": "Workflow that succeeds",
   "target": "https://aragorn.transltr.io/robokop/query",
-  "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org"],
+  "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org", "max@covar.com"],
 
   "expectations": [
     {
