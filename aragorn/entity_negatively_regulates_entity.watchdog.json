@@ -28,14 +28,14 @@
             "object": "n0",
             "subject": "n1",
             "predicates": [
-              "biolink:entity_negatively_regulates_entity"
+              "biolink:regulates"
             ]
           }
         },
         "nodes": {
           "n0": {
             "ids": [
-              "NCBIGene:23221"
+              "NCBIGene:23321"
             ],
             "categories": [
               "biolink:Gene"
