@@ -11,7 +11,7 @@
       "validation_type": "string"
     },
     {
-      "selector": ".[0].mapping",
+      "selector": ".[0].mapping.predicate",
       "value": "biolink:treats",
       "validation_type": "string"
     }
