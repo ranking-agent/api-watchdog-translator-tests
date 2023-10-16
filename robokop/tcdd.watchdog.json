@@ -1,0 +1,83 @@
+
+{
+  "name": "TCDD Dioxin-Disease",
+  "target": "https://aragorn.transltr.io/robokop/query",
+  "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org", "max@covar.com"],
+
+  "expectations": [
+    {
+      "selector": ".message.knowledge_graph.nodes | length > 0",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.results | length > 0",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": "(.message.results | map(.score) | length) == (.message.results | length)",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.knowledge_graph.nodes | has(\"MONDO:0007179\")",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.knowledge_graph.edges | any(.predicate == \"biolink:treats\")",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.knowledge_graph.edges | any(.predicate == \"biolink:contributes_to\")",
+      "value": true,
+      "validation_type": "bool"
+    }
+  ],
+  "payload": {
+    "message": {
+      "query_graph": {
+        "nodes": {
+          "n0": {
+            "name": "2,3,7,8-Tetrachlorodibenzo-P-dioxin",
+            "categories": [
+              "biolink:SmallMolecule",
+              "biolink:MolecularEntity",
+              "biolink:ChemicalEntity",
+              "biolink:NamedThing",
+              "biolink:Entity",
+              "biolink:PhysicalEssence",
+              "biolink:ChemicalOrDrugOrTreatment",
+              "biolink:ChemicalEntityOrGeneOrGeneProduct",
+              "biolink:ChemicalEntityOrProteinOrPolypeptide",
+              "biolink:PhysicalEssenceOrOccurrent"
+            ],
+            "ids": [
+              "PUBCHEM.COMPOUND:15625"
+            ]
+          },
+          "n1": {
+            "categories": [
+              "biolink:Disease"
+            ],
+            "name": "Disease"
+          }
+        },
+        "edges": {
+          "e0": {
+            "subject": "n0",
+            "object": "n1",
+            "predicates": [
+              "biolink:related_to"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,99 @@
+
+{
+  "name": "Ammonia-Gene-Asthma",
+  "target": "https://aragorn.transltr.io/robokop/query",
+  "email_to": ["bizon@renci.org", "kenny@covar.com", "morrised@unc.edu", "pasfield@renci.org", "max@covar.com"],
+
+  "expectations": [
+    {
+      "selector": ".message.knowledge_graph.nodes | length > 0",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.results | length > 0",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": "(.message.results | map(.score) | length) == (.message.results | length)",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.knowledge_graph.nodes | has(\"NCBIGene:1956\")",
+      "value": true,
+      "validation_type": "bool"
+    },
+    {
+      "selector": ".message.knowledge_graph.edges | any(.predicate == \"biolink:contributes_to\")",
+      "value": true,
+      "validation_type": "bool"
+    }
+  ],
+  "payload": {
+    "message": {
+      "query_graph": {
+        "nodes": {
+          "n0": {
+            "name": "Ammonia",
+            "categories": [
+              "biolink:SmallMolecule",
+              "biolink:MolecularEntity",
+              "biolink:ChemicalEntity",
+              "biolink:NamedThing",
+              "biolink:Entity",
+              "biolink:PhysicalEssence",
+              "biolink:ChemicalOrDrugOrTreatment",
+              "biolink:ChemicalEntityOrGeneOrGeneProduct",
+              "biolink:ChemicalEntityOrProteinOrPolypeptide",
+              "biolink:PhysicalEssenceOrOccurrent"
+            ],
+            "ids": [
+              "PUBCHEM.COMPOUND:222"
+            ]
+          },
+          "n1": {
+            "categories": [
+              "biolink:Gene"
+            ],
+            "name": "Gene"
+          },
+          "n2": {
+            "name": "asthma",
+            "categories": [
+              "biolink:Disease",
+              "biolink:DiseaseOrPhenotypicFeature",
+              "biolink:BiologicalEntity",
+              "biolink:NamedThing",
+              "biolink:Entity",
+              "biolink:ThingWithTaxon"
+            ],
+            "ids": [
+              "MONDO:0004979"
+            ]
+          }
+        },
+        "edges": {
+          "e0": {
+            "subject": "n0",
+            "object": "n1",
+            "predicates": [
+              "biolink:related_to"
+            ]
+          },
+          "e1": {
+            "subject": "n1",
+            "object": "n2",
+            "predicates": [
+              "biolink:related_to"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
