@@ -21,7 +21,7 @@
       "validation_type": "bool"
     },
     {
-      "selector": ".message.knowledge_graph.nodes | has(\"MONDO:0007179\")",
+      "selector": ".message.knowledge_graph.nodes | has(\"MONDO:0005070\")",
       "value": true,
       "validation_type": "bool"
     },
