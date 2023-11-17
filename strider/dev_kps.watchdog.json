@@ -1,0 +1,28 @@
+{
+	"name": "ICEES KG is listed",
+  "method": "GET",
+	"target": "https://strider.renci.org/1.4/kps",
+	"email_to": ["max@covar.com", "morrised@unc.edu"],
+	"expectations": [
+		{
+			"selector": "any(. == \"Automat-icees-kg(Trapi v1.4.0)_development\")",
+			"value": true,
+			"validation_type": "bool"
+		},
+    {
+			"selector": "any(. == \"Automat-icees-kg(Trapi v1.4.0)_staging\")",
+			"value": true,
+			"validation_type": "bool"
+		},
+    {
+			"selector": "any(. == \"Automat-icees-kg(Trapi v1.4.0)_testing\")",
+			"value": true,
+			"validation_type": "bool"
+		},
+    {
+			"selector": "any(. == \"Automat-icees-kg(Trapi v1.4.0)_production\")",
+			"value": true,
+			"validation_type": "bool"
+		}
+	]
+}
