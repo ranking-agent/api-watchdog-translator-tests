@@ -5,7 +5,7 @@
 	"expectations": [
 		{
 			"selector": ".message.knowledge_graph.nodes[\"MONDO:0005148\"].name",
-			"value": "type 2 diabetes mellitus (HPO)",
+			"value": "Type II diabetes mellitus (HPO)",
 			"validation_type": "string"
 		},
 		{
