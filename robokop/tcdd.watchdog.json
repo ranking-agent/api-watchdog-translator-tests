@@ -26,7 +26,7 @@
       "validation_type": "bool"
     },
     {
-      "selector": ".message.knowledge_graph.edges | any(.predicate == \"biolink:treats\")",
+      "selector": ".message.knowledge_graph.edges | any(.predicate == \"biolink:treats_or_applied_or_studied_to_treat\")",
       "value": true,
       "validation_type": "bool"
     },
