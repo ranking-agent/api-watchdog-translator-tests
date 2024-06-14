@@ -1,6 +1,6 @@
 {
   "name": "Test DILI",
-  "target": "https://automat.transltr.io/icees-kg/1.4/query",
+  "target": "https://automat.transltr.io/icees-kg/query",
   "email_to": ["max@covar.com", "kenny@covar.com", "bizon@renci.org", "morrised@unc.edu", "pasfield@renci.org"],
 
   "expectations": [
