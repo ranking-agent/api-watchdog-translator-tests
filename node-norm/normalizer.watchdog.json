@@ -5,12 +5,12 @@
 
   "expectations": [
     {
-      "selector": ".\"MESH:D014867\".id.identifier == \"PUBCHEM.COMPOUND:962\"",
+      "selector": ".\"MESH:D014867\".id.identifier == \"CHEBI:15377\"",
       "value": true,
       "validation_type": "bool"
     },
     {
-      "selector": ".\"MESH:D014867\".id.label == \"Water\"",
+      "selector": ".\"MESH:D014867\".id.label == \"WATER\"",
       "value": true,
       "validation_type": "bool"
     },
