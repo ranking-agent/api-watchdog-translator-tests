@@ -4,13 +4,8 @@
 	"target": "https://strider.test.transltr.io/kps",
 	"email_to": ["max@covar.com", "morrised@unc.edu"],
 	"expectations": [
-    {
-			"selector": "any(. == \"Automat-icees-kg(Trapi v1.5.0)_testing\")",
-			"value": true,
-			"validation_type": "bool"
-		},
-    {
-			"selector": "any(. == \"Automat-icees-kg(Trapi v1.5.0)_production\")",
+    		{
+			"selector": "any(. == \"infores:automat-icees-kg",
 			"value": true,
 			"validation_type": "bool"
 		}
