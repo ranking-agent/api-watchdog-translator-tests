@@ -10,7 +10,7 @@
       "validation_type": "bool"
     },
     {
-      "selector": ".\"MESH:D014867\".id.label == \"WATER\"",
+      "selector": ".\"MESH:D014867\".id.label == \"Water\"",
       "value": true,
       "validation_type": "bool"
     },
