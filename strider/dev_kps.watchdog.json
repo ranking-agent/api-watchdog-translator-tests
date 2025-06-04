@@ -1,6 +1,6 @@
 {
 	"name": "ICEES KG is listed",
-  "method": "GET",
+	"method": "GET",
 	"target": "https://strider.renci.org/kps",
 	"email_to": ["max@covar.com", "morrised@unc.edu"],
 	"expectations": [

@@ -1,11 +1,11 @@
 {
 	"name": "ICEES KG is listed",
-  "method": "GET",
+	"method": "GET",
 	"target": "https://strider.test.transltr.io/kps",
 	"email_to": ["max@covar.com", "morrised@unc.edu"],
 	"expectations": [
     		{
-			"selector": "any(. == \"infores:automat-icees-kg",
+			"selector": "any(. == \"infores:automat-icees-kg\")",
 			"value": true,
 			"validation_type": "bool"
 		}
