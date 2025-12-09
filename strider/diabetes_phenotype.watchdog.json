@@ -9,13 +9,13 @@
 			"validation_type": "bool"
 		},
 		{
-			"selector": ".message.knowledge_graph.nodes | has(\"HP:0031819\")",
+			"selector": ".message.knowledge_graph.nodes | has(\"HP:0000855\")",
 			"value": true,
 			"validation_type": "bool"
 		},
 		{
-			"selector": ".message.results | map(select(.node_bindings.n1[0].id == \"HP:0004324\")) | .[0].node_bindings.n1[0].id",
-			"value": "HP:0004324",
+			"selector": ".message.results | map(select(.node_bindings.n1[0].id == \"HP:0000855\")) | .[0].node_bindings.n1[0].id",
+			"value": "HP:0000855",
 			"validation_type": "string"
 		}
 	],
