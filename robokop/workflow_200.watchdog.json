@@ -1,7 +1,7 @@
 {
   "name": "Workflow that succeeds",
   "target": "https://robokop-ara.apps.renci.org/robokop/query",
-  "email_to": ["bizon@renci.org", "emorris@renci.org", "pasfield@renci.org"],
+  "email_to": ["bizon@renci.org", "emorris@renci.org"],
 
   "expectations": [
     {

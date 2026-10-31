@@ -1,7 +1,7 @@
 {
   "name": "Node normalization checks",
   "target": "https://nodenorm.transltr.io/get_normalized_nodes",
-  "email_to": ["bizon@renci.org", "morrised@unc.edu", "pasfield@renci.org"],
+  "email_to": ["bizon@renci.org", "morrised@unc.edu"],
 
   "expectations": [
     {
